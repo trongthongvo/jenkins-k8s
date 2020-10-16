@@ -13,12 +13,6 @@ pipeline {
             }
         }
 
-        stage('git clone success') {
-            steps {
-                sh 'git clone success'
-            }
-        }
-
         stage('docker build') {
             steps {
                 container ('docker'){
