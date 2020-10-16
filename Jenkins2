@@ -1,0 +1,17 @@
+pipeline {
+  agent {
+    kubernetes {
+      defaultContainer 'python'
+      yamlFile 'build-pod2.yaml'
+    }
+  }
+  
+    stages {
+        stage('version') {
+            steps {
+                sh 'python -V'
+            }
+        }
+        }
+
+}
