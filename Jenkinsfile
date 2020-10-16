@@ -19,6 +19,14 @@ pipeline {
             }
         }
 
+        stage('docker') {
+            steps {
+                container ('container'){
+                sh "docker build -t python:jk8s ."
+                }
+            }
+        }
+
     }
 
 }
