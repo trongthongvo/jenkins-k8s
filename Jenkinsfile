@@ -16,7 +16,7 @@ pipeline {
         stage('docker build') {
             steps {
                 container ('docker'){
-                sh "docker build -t python:jk8s ."
+                sh 'docker build -t python:jk8s .'
                 }
             }
         }
