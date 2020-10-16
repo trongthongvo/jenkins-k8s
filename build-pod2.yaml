@@ -9,4 +9,4 @@ spec:
     - name: python
       image: trongthongvo/python-app:23
       ports:
-          - 8080:8080
+        - 8080:8080
