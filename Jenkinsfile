@@ -15,13 +15,13 @@ pipeline {
 
         stage('git clone success') {
             steps {
-                sh "git clone success"
+                sh 'git clone success'
             }
         }
 
-        stage('docker') {
+        stage('docker build') {
             steps {
-                container ('container'){
+                container ('docker'){
                 sh "docker build -t python:jk8s ."
                 }
             }
