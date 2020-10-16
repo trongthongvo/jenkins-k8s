@@ -12,13 +12,13 @@ pipeline {
                 sh 'python -V'
             }
         }
-    }
 
-    stages {
-        stage('clone git success') {
+        stage('git clone success') {
             steps {
-                sh 'echo clone git success'
+                sh 'git clone success'
             }
         }
+
     }
+
 }
