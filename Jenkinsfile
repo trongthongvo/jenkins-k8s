@@ -17,7 +17,7 @@ pipeline {
     stages {
         stage('clone git success') {
             steps {
-                sh 'echo "clone git success"'
+                sh 'echo clone git success'
             }
         }
     }
